@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Vector.png" alt="logo arula">
+        <p>Camilo Avellaneda</p>
+        <a href="https://github.com/kamilo1000"> <img src="imagenes/GitHub.png" alt="logo github"></a>
+    </header>
+
+    <div class="cointainer">
+        <form class="ingresar">
+            <textarea name="" id="ingresar" cols="30" rows="10" placeholder="Ingrese aqui su texto"></textarea>
+            <p class="aviso">Solo letras minusculas sin acento</p>
+            <div class="encrip">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </form>
+        <form class="resultado">
+            <div id="copiar">
+                <textarea class="cop" name="" id="cop" cols="30" rows="10" readonly></textarea>
+                <button id="b-copiar">Copiar</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="encriptar.js"></script>
+    <script src="desencriptar.js"></script>
+</body>
+</html>

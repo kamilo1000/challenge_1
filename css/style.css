@@ -1,0 +1,214 @@
+body{
+    background: linear-gradient(50deg,#417D7A, #1D5C63 );
+    margin: 8px;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cointainer{
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 100%;
+    margin: 0% 5%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 1% 5% 1% 5%;
+}
+
+header p{
+    color: black;
+    font-size: 20px;
+    padding: 0% 5% 0% 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+header a img{
+    width: 50%;
+}
+
+::placeholder{
+    color: #ede6db;
+    opacity: 50%;
+}
+
+.ingresar{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ingresar textarea{
+    background: transparent;
+    width: 80%;
+    border: 0;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    margin: 5px auto 5px auto;
+
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 40px;
+    font-size: 32px;
+    color: #ede6db;
+
+}
+
+.ingresar p{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    margin-left: 7%;
+    font-size: 20px;
+    color: #ede6db;
+    opacity: 70%;
+}
+
+.encrip{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.encrip button{
+    width: 40%;
+    min-width: 180px;
+    height: 67px;
+    margin: 5px 10px;
+    border-radius:24px ;
+    border: 3px solid #1a3c40;
+    background: #1a3c40;
+
+    font-family: "monaco";
+    font-style: normal;
+    font-size: 32px;
+    color: #ede6db;
+
+}
+
+.encrip button:hover{
+    background: #ede6db;
+    color: #1a3c40;
+    cursor: pointer;
+    width: 45%;
+    height: 77;
+    transition: 1s;
+}
+
+.resultado{
+    width: 30%;
+}
+
+#copiar{
+    background: linear-gradient(30deg,#558583, #286D75);
+    width: 95%;
+    height: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.p_text{
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ede6db;
+}
+
+#copiar textarea{
+    background: transparent;
+    width: 100%;
+    border: 0;
+    outline: none;
+    resize: none;
+    margin: 5%;
+
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ede6db;
+}
+
+#cop:focus{
+    outline: none;
+}
+
+#copiar button{
+    background: #1a3c40;
+    width: 85%;
+    min-width: 150px;
+    height: 67px;
+    margin: auto;
+    border: 3px solid #1a3c40;
+    border-radius: 24px;
+
+    font-family: "monaco";
+    font-style: normal;
+    font-size: 32px;
+    color: #ede6db;
+}
+
+#copiar button:hover{
+    background: #ede6db;
+    color: #1a3c40;
+    cursor: pointer;
+    width: 90%;
+    height: 77;
+    transition: 1s;
+}
+
+
+.imagen-buscar{
+    position: absolute;
+    margin: 14% 3%;
+    max-width: 90%;
+    min-width: 60%;
+}
+
+
+@media only screen and (max-width: 768px){
+    body{
+        overflow: visible;
+    }
+
+    .cointainer{
+        flex-direction: column;
+    }
+
+    .ingresar{
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    .encrip button{
+        margin: 5% auto;
+    }
+
+    .resultado{
+        width: 95%;
+        height: 30%;
+        margin: 3% auto;
+    }
+
+    #copiar{
+        margin: auto;
+    }
+
+    .imagen-buscar{
+        margin: 1% 5% 1% 15%;
+    }
+}
